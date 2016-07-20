@@ -9,5 +9,12 @@ OPENID_PROVIDERS = [
 import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
-SQALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
-SQALCHEMY_MIGRATE_REPO = os.path.join(basedir, 'db_repository')
+SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
+SQLALCHEMY_MIGRATE_REPO = os.path.join(basedir, 'db_repository')
+
+MAIL_SERVER = 'localhost'
+MAIL_PORT = 25
+MAIL_USERNAME = 'Jack'
+MAIL_PASSWORD = 'conquest'
+
+ADMINS = ['sliningerjack@yahoo.com']
